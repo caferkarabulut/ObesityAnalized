@@ -1,10 +1,17 @@
-# Obezite Veri Analizi Projesi
+# ObesityAnalized - Obezite Veri Analizi Projesi
 
 Bu proje, obezite veri seti üzerinde sınıflandırma, regresyon ve kümeleme analizleri gerçekleştirir.
 
 ## 🚀 Kurulum
 
-### 1. Sanal Ortamı Aktif Et
+### 1. Repoyu Klonla
+
+```bash
+git clone https://github.com/caferkarabulut/ObesityAnalized.git
+cd ObesityAnalized
+```
+
+### 2. Sanal Ortamı Aktif Et
 
 ```bash
 # Windows
@@ -14,7 +21,7 @@ Bu proje, obezite veri seti üzerinde sınıflandırma, regresyon ve kümeleme a
 source venv/bin/activate
 ```
 
-### 2. Bağımlılıkları Yükle
+### 3. Bağımlılıkları Yükle
 
 ```bash
 pip install -r requirements.txt
@@ -29,7 +36,7 @@ python main.py
 ## 📁 Proje Yapısı
 
 ```
-obezite/
+ObesityAnalized/
 ├── main.py              # Ana çalıştırma dosyası
 ├── classification.py    # Random Forest sınıflandırma
 ├── regression.py        # BMI regresyon analizi
