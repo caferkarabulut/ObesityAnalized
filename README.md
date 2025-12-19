@@ -38,9 +38,9 @@ python main.py
 ```
 ObesityAnalized/
 ├── main.py              # Ana çalıştırma dosyası
-├── classification.py    # Random Forest sınıflandırma
+├── classification.py    # Random Forest & SVM sınıflandırma
 ├── regression.py        # BMI regresyon analizi
-├── clustering.py        # K-Means kümeleme
+├── clustering.py        # K-Means, Hierarchical & DBSCAN kümeleme
 ├── ObesityDataSet.csv   # Veri seti
 ├── requirements.txt     # Bağımlılıklar
 ├── .gitignore           # Git ignore dosyası
@@ -49,15 +49,42 @@ ObesityAnalized/
 
 ## 📈 Analizler
 
-- **Sınıflandırma**: Random Forest ile obezite seviyesi tahmini
-- **Regresyon**: Linear Regression ve Random Forest ile BMI tahmini
-- **Kümeleme**: K-Means ile veri kümeleme ve PCA görselleştirmesi
+### Sınıflandırma (Classification)
+- **Random Forest** ile obezite seviyesi tahmini
+- **SVM (Support Vector Machine)** ile obezite seviyesi tahmini
+- İki yöntemin karşılaştırmalı analizi
+
+### Regresyon (Regression)
+- **Linear Regression** ile BMI tahmini
+- **Random Forest Regressor** ile BMI tahmini
+
+### Kümeleme (Clustering)
+- **K-Means** kümeleme analizi
+- **Hierarchical Clustering** (Ward linkage)
+- **DBSCAN** yoğunluk tabanlı kümeleme
+- PCA ile 2D görselleştirme
 
 ## 📋 Çıktılar
 
 | Dosya | Açıklama |
 |-------|----------|
-| `confusion_matrix_ve_metrikler.png` | Sınıflandırma performans metrikleri |
+| `confusion_matrix_ve_metrikler.png` | Random Forest vs SVM karşılaştırması |
 | `bmi_regression_sonuclari.png` | Regresyon sonuçları |
-| `kmeans_elbow_silhouette.png` | K-Means optimizasyonu |
-| `kmeans_pca_visualization.png` | Küme görselleştirmesi |
+| `kmeans_elbow_silhouette.png` | K-Means optimizasyonu (Elbow & Silhouette) |
+| `kmeans_pca_visualization.png` | K-Means küme görselleştirmesi |
+| `clustering_comparison.png` | K-Means vs Hierarchical vs DBSCAN karşılaştırması |
+
+## 📊 Sonuç Görselleri
+
+### Sınıflandırma - Random Forest vs SVM
+![Sınıflandırma Sonuçları](confusion_matrix_ve_metrikler.png)
+
+### Regresyon - BMI Tahmini
+![Regresyon Sonuçları](bmi_regression_sonuclari.png)
+
+### Kümeleme - Yöntem Karşılaştırması
+![Kümeleme Karşılaştırması](clustering_comparison.png)
+
+## 📝 Lisans
+
+MIT License
